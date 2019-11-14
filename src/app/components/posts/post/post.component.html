@@ -1,1 +1,13 @@
-<p>post works!</p>
+<div class="container">
+  <mat-card class="post-card">
+    <img matCardImage class="align-center" [src]="post.imagePost" />
+    <mat-card-content>
+      <mat-card-title>
+        {{ post.titlePost }}
+      </mat-card-title>
+      <p class="content">
+        {{ post.contentPost }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
