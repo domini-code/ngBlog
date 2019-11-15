@@ -19,7 +19,6 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContainerAppComponent } from './components/pages/container-app/container-app.component';
-import { TableComponent } from './shared/components/table/table.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +26,7 @@ import { TableComponent } from './shared/components/table/table.component';
     NewPostComponent,
     PostComponent,
     ToolbarComponent,
-    ContainerAppComponent,
-    TableComponent
+    ContainerAppComponent
   ],
   imports: [
     BrowserModule,

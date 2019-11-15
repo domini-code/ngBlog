@@ -1,0 +1,43 @@
+<mat-form-field>
+  <input
+    matInput
+    (keyup)="applyFilter($event.target.value)"
+    placeholder="Filter"
+  />
+</mat-form-field>
+<div class="container-btn-new">
+  <button mat-stroked-button (click)="onNewPost()">
+    <mat-icon>note_add</mat-icon>&nbsp; New Post
+  </button>
+</div>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+  <ng-container matColumnDef="titlePost">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th>
+    <td mat-cell *matCellDef="let element">{{ element.titlePost }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="tagsPost">
+    <th mat-header-cell *matHeaderCellDef>Tags</th>
+    <td mat-cell *matCellDef="let element">{{ element.tagsPost }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef>Tags</th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-stroked-button color="accent" (click)="onEditPost(element)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-stroked-button color="warn" (click)="onDeletePost(element)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<mat-paginator
+  [pageSizeOptions]="[5, 10, 20]"
+  showFirstLastButtons
+></mat-paginator>
