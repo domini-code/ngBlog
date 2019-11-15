@@ -1,1 +1,27 @@
-<p>admin works!</p>
+<mat-toolbar color="primary" class="navbar">
+  <span color="primary" (click)="opened = !opened">
+    <mat-icon>menu</mat-icon>
+  </span>
+  &nbsp;&nbsp;
+  <a routerLink="/">
+    <span>Home</span>
+  </a>
+  <span class="fill-remaining-space"></span>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sideNav [(opened)]="opened" mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="posts"> <mat-icon>book</mat-icon>Posts </a>
+    </mat-nav-list>
+
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <a mat-list-item routerLink="profile">
+        <mat-icon>account_circle</mat-icon>Profile
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
