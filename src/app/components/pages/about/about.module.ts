@@ -3,13 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { AboutRoutingModule } from './about-routing.module';
 import { AboutComponent } from './about.component';
-
+import { MaterialModule } from '../../../material.module';
 
 @NgModule({
   declarations: [AboutComponent],
-  imports: [
-    CommonModule,
-    AboutRoutingModule
-  ]
+  imports: [CommonModule, AboutRoutingModule, MaterialModule]
 })
-export class AboutModule { }
+export class AboutModule {}
