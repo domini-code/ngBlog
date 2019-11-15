@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ngblog-eab58": {
+      "hosting": {
+        "ngBlog": [
+          "ngblog-eab58"
+        ]
+      }
+    }
+  }
+}
