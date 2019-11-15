@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="posts$ | async as posts; else loading">
   <mat-card class="post-card" *ngFor="let post of posts">
     <mat-card-header>
       <mat-card-title>
@@ -13,5 +13,18 @@
         {{ post.contentPost }}
       </p>
     </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <mat-chip-list>
+        <mat-chip *ngFor="let tag of post.tagsPost" [ngClass]="tag">
+          {{ tag }}
+        </mat-chip>
+      </mat-chip-list>
+    </mat-card-actions>
   </mat-card>
 </div>
+<ng-template #loading>
+  <div class="container-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-template>

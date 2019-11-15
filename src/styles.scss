@@ -14,3 +14,25 @@ body {
 .active {
   border: 1px solid #f5f5f5;
 }
+
+.container-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.sport {
+  background: blue !important;
+}
+.life {
+  background: orangered !important;
+}
+.style {
+  background: red !important;
+}
+
+mat-chip.mat-chip.mat-primary.mat-standard-chip {
+  min-height: 1rem;
+  padding: 9px;
+}
