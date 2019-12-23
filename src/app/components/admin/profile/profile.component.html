@@ -1,1 +1,27 @@
-<p>profile works!</p>
+<form (ngSubmit)="onSaveUser(profileForm.value)" [formGroup]="profileForm">
+  <mat-card class="profile-card">
+    <mat-card-header>
+      <div class="label bottom">
+        <p>Change</p>
+        <img [src]="currentImage" (click)="inputImageProfile.click()" />
+        <input hidden type="file" #inputImageProfile formControlName="photoURL"
+          (change)="handleImage(($event?.target?.files)[0])" />
+      </div>
+
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="displayName">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <div class="mat-dialog-actions">
+        <input type="submit" class="mat-flat-button" value="Save" />
+      </div>
+    </mat-card-content>
+  </mat-card>
+</form>
