@@ -1,0 +1,18 @@
+@import "./variables";
+
+.sport {
+    background: $category_color_sport !important;
+    color: $default_white !important;
+ }
+  .life {
+    background: $category_color_life !important;
+
+  }
+  .style {
+    background: $category_color_style !important;
+  }
+  
+  mat-chip.mat-chip.mat-primary.mat-standard-chip {
+    min-height: 1rem;
+    padding: 9px;
+  }

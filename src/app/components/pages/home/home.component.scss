@@ -1,3 +1,5 @@
+@import "src/scss/variables";
+
 .container {
   margin-top: 25px;
   display: grid;
@@ -6,10 +8,14 @@
   grid-row-gap: 15px;
   justify-content: center;
   .post-card {
-      background: #444;
+      &:hover {
+        opacity: 0.9;
+      }
+      background: $card_background;
       color: #fff;
       border-radius: 5px;
       padding: 20px;
       font-size: 150%;
     }
 }
+
