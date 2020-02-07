@@ -7,15 +7,16 @@
   grid-column-gap: 10px;
   grid-row-gap: 15px;
   justify-content: center;
-  .post-card {
-      &:hover {
-        opacity: 0.9;
-      }
-      background: $card_background;
-      color: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      font-size: 150%;
-    }
-}
 
+  .post-card {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    background: $card_background;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+}
