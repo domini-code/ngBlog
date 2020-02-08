@@ -1,3 +1,4 @@
+@import "src/scss/variables";
 .navbar {
   position: sticky;
   top: 0;
@@ -10,7 +11,7 @@
 mat-sidenav {
   width: 200px;
   cursor: pointer;
-  background: #451e89;
+  background:$button_purpure;
   position: fixed;
   top: 55px;
   z-index: 1000;
@@ -18,7 +19,7 @@ mat-sidenav {
 
 .mat-list-base .mat-list-item,
 a {
-  color: #fff;
+  color:$default_white;
   text-decoration: none;
   cursor: pointer;
 }

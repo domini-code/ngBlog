@@ -3,18 +3,17 @@
 .container {
   margin-top: 25px;
   display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-columns: repeat(4,24%);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
   justify-content: center;
-
   .post-card {
     &:hover {
       opacity: 0.8;
     }
 
     background: $card_background;
-    color: #fff;
+    color: $default_white;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;

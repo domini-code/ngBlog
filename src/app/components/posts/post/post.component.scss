@@ -1,7 +1,7 @@
-
+@import "src/scss/variables";
   a {
     cursor: pointer;
-    color: #fff;
+    color: $default_white;
     text-decoration: none;
   }
    img {
