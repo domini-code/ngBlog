@@ -1,7 +1,8 @@
 :host {
-  display: flex;
-  justify-content: center;
-  margin: 100px 0;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center
 }
 
 .mat-form-field {
