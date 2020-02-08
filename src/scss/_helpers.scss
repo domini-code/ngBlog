@@ -1,0 +1,7 @@
+@mixin button_full($color) {
+    width: 100%;
+    background:$color;
+    &:hover{
+      opacity: 0.8;
+    }
+}

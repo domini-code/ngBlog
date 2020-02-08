@@ -1,3 +1,6 @@
+@import "src/scss/variables";
+@import "src/scss/helpers";
+
 .new-post-container{
   display: flex;
   flex-direction: column;
@@ -8,15 +11,11 @@
     }
 
     input.mat-flat-button{
-      width: 100%;
-      background: #4e0561;
-      &:hover{
-        background: #3c034b;
-      }
+      @include button_full($button_purpure)
     }
 
     .custom-file{
-      border: 1px solid #ccc;
+      border: 1px solid $file_white;
       display: inline-block;
       padding: 6px 0;
       cursor: pointer;

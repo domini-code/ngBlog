@@ -1,4 +1,6 @@
+@import "src/scss/variables";
+
 a {
-  color: #fff;
+  color: $default_white;
   text-decoration: none;
 }

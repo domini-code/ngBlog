@@ -1,5 +1,6 @@
+@import "src/scss/variables";
 .card-about {
-  background: #fff;
-  color: #000;
+  background: $default_white;
+  color: $default_black;
   height: 100%;
 }

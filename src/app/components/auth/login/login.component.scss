@@ -1,8 +1,11 @@
+@import "src/scss/variables";
 :host {
   height: 100%;
   display: grid;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  background-color: $button_purpure;
+
 }
 
 .mat-form-field {
